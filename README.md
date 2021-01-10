@@ -2,32 +2,32 @@
 
 Data is taken from http://chalearnlap.cvc.uab.es/dataset/12/description/.
 
-The data consists of Multivariate gesture readings. Sample of the data is included in the repo.
-The data consists of 3D spatial coordinates and Rotational orientation of 20 different sensors attached to a human performing gestures.
+The data consists of Multivariate gesture readings. Sample of the data is included in the repo.</br>
+The data consists of 3D spatial coordinates and Rotational orientation of 20 different sensors attached to a human performing gestures.</br>
 
 # Tasks performed:
 ## Phase1
 
-Task 0: Preprocessing - Normalize, Quantize, Aggregate, and Vectorize(tf, tfidf) the data.
+Task 0: Preprocessing - Normalize, Quantize, Aggregate, and Vectorize(tf, tfidf) the data.</br>
 python3 gr_p1.py --dr data/ --task task0 --w 3 --r 3 --s 3
 
-Task 1: Apply dimensionality reduction on the Vectors. NMF is used here.
+Task 1: Apply dimensionality reduction on the Vectors. NMF is used here.</br>
 python3 gr_p1.py --dr data/ --task task1 --k 50
 
-Task 2: Gesture Similarity based on edit distance, top-k latent semantics and other metrics.
+Task 2: Gesture Similarity based on edit distance, top-k latent semantics and other metrics.</br>
 python3 gr_p1.py --dr data/ --task task2 --gesture_id 1 --user_option 6 --r 3
 
-Task 3: Latent Gesture Discovery - Reports the top principle components using the gesture-gesture similarity matrix.
+Task 3: Latent Gesture Discovery - Reports the top principle components using the gesture-gesture similarity matrix.</br>
 python3 gr_p1.py --dr data/ --task task3 --user_option 4 --p 3
 
-Task 4: Clustering using Spectral clustering (task4a) and K-means clustering(task4b).
-python3 gr_p1.py --dr data/ --task task4a
+Task 4: Clustering using Spectral clustering (task4a) and K-means clustering(task4b).</br>
+python3 gr_p1.py --dr data/ --task task4a</br>
 python3 gr_p1.py --dr data/ --task task4b --user_option 4 --p 3
 
 
 python3 gr_p1.py --help
 
-optional arguments:
+**Optional arguments**:
 
 <table align='center'>
 <tr><td>-h, --help                 </td><td> Show this help message and exit</td></tr>
@@ -46,25 +46,25 @@ optional arguments:
 
 ## Phase2
 
-Task 0: Preprocessing - Vectorization, gesture-gesture similarity graph creation.
+Task 0: Preprocessing - Vectorization, gesture-gesture similarity graph creation.</br>
 python3 gr_p2.py --dr data/ --task task0 --w 3 --r 3 --s 3
 
-Task 1: Representative Gesture Identification using Personalised page rank Algorithm.
+Task 1: Representative Gesture Identification using Personalised page rank Algorithm.</br>
 python3 gr_p1.py --dr data/ --task task1 --k 50
 
-Task 2: Gesture classification using PPR algorithm.
+Task 2: Gesture classification using PPR algorithm.</br>
 python3 gr_p2.py --dr data/ --task task2 --sample "sample_training_labels.xlsx"
 
-Task 5: Classifier with relevance feedback.
+Task 5: Classifier with relevance feedback.</br>
 python3 gr_p2.py --dr data/ --task task5 --m 2 --k 2 --c 0.05 --q "1,249"
 
-Task 6: Task5 with interactive UI.
+Task 6: Task5 with interactive UI.</br>
 python3 gr_p2.py --dr data/ --task task6
 
 
 python3 gr_p2.py --help
 
-optional arguments:
+**Optional arguments**:
 <table align='center'>
 <tr><td>  -h, --help           </td><td>     Show this help message and exit</td></tr>
 <tr><td>  --dr DR              </td><td>     Directory Containing the gesture components</td></tr>
