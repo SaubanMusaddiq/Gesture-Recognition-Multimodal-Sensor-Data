@@ -28,20 +28,21 @@ python3 gr_p1.py --dr data/ --task task4b --user_option 4 --p 3
 python3 gr_p1.py --help
 
 optional arguments:
--h, --help                     show this help message and exit
---dr DR                        Directory Containing the gesture components
---task TASK                    Choose Tasks: task0, task1, task2, task3, task4a,
-                               task4c
---w W                          Gesture word quantization: Window size
---r R                          Gesture word quantization: Resolution
---s S                          Gesture word quantization: Shift length
---vector_type VECTOR_TYPE      Vector type tf/Tfidf
---user_option USER_OPTION      User Options 1,4,6
---user_option2 USER_OPTION2    euc/dot
---k K                          k
---p P                          p
---gesture_id GESTURE_ID        Gesture file Name wihout extension. Eg: 1,2,3
 
+<table align='center'>
+<tr><td>-h, --help                 </td><td> Show this help message and exit</td></tr>
+<tr><td>--dr DR                    </td><td> Directory Containing the gesture components</td></tr>
+<tr><td>--task TASK                </td><td> Choose Tasks: task0, task1, task2, task3, task4a, task4c</td></tr>
+<tr><td>--w W                      </td><td> Gesture word quantization: Window size</td></tr>
+<tr><td>--r R                      </td><td> Gesture word quantization: Resolution</td></tr>
+<tr><td>--s S                      </td><td> Gesture word quantization: Shift length</td></tr>
+<tr><td>--vector_type VECTOR_TYPE  </td><td> Vector type tf/Tfidf</td></tr>
+<tr><td>--user_option USER_OPTION  </td><td> User Options 1,4,6</td></tr>
+<tr><td>--user_option2 USER_OPTION2</td><td> euc/dot</td></tr>
+<tr><td>--k K                      </td><td> k</td></tr>
+<tr><td>--p P                      </td><td> p</td></tr>
+<tr><td>--gesture_id GESTURE_ID    </td><td> Gesture file Name wihout extension. Eg: 1,2,3</td></tr>
+</table>
 
 ## Phase2
 
@@ -64,16 +65,19 @@ python3 gr_p2.py --dr data/ --task task6
 python3 gr_p2.py --help
 
 optional arguments:
-  -h, --help                show this help message and exit
-  --dr DR                   Directory Containing the gesture components
-  --task TASK               Choose Tasks: task0, task1, task2, task5, task6
-  --w W                     Gesture word quantization: Window size
-  --r R                     Gesture word quantization: Resolution
-  --s S                     Gesture word quantization: Shift length
-  --k K                     Transition graph node edges
-  --m M                     No of objects to be retrieved
-  --c C                     PPR constant
-  --q Q                     Query
-  --vect_type VECT_TYPE     Vector Type
-  --mat_type MAT_TYPE       Gesture similarity matrix type
-  --sample SAMPLE           Sample file for training
+<table align='center'>
+<tr><td>  -h, --help           </td><td>     Show this help message and exit</td></tr>
+<tr><td>  --dr DR              </td><td>     Directory Containing the gesture components</td></tr>
+<tr><td>  --task TASK          </td><td>     Choose Tasks: task0, task1, task2, task5, task6</td></tr>
+<tr><td>  --w W                </td><td>     Gesture word quantization: Window size</td></tr>
+<tr><td>  --r R                </td><td>     Gesture word quantization: Resolution</td></tr>
+<tr><td>  --s S                </td><td>     Gesture word quantization: Shift length</td></tr>
+<tr><td>  --k K                </td><td>     Transition graph node edges</td></tr>
+<tr><td>  --m M                </td><td>     No of objects to be retrieved</td></tr>
+<tr><td>  --c C                </td><td>     PPR constant</td></tr>
+<tr><td>  --q Q                </td><td>     Query</td></tr>
+<tr><td>  --vect_type VECT_TYPE</td><td>     Vector Type</td></tr>
+<tr><td>  --mat_type MAT_TYPE  </td><td>     Gesture similarity matrix type</td></tr>
+<tr><td>  --sample SAMPLE      </td><td>     Sample file for training</td></tr>
+</table>
+
