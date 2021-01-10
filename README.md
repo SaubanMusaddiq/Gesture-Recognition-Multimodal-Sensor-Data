@@ -29,7 +29,7 @@ python3 gr_p1.py --help
 
 **Optional arguments**:
 
-<table align='center'>
+<table>
 <tr><td>-h, --help                 </td><td> Show this help message and exit</td></tr>
 <tr><td>--dr DR                    </td><td> Directory Containing the gesture components</td></tr>
 <tr><td>--task TASK                </td><td> Choose Tasks: task0, task1, task2, task3, task4a, task4c</td></tr>
@@ -65,7 +65,7 @@ python3 gr_p2.py --dr data/ --task task6
 python3 gr_p2.py --help
 
 **Optional arguments**:
-<table align='center'>
+<table>
 <tr><td>  -h, --help           </td><td>     Show this help message and exit</td></tr>
 <tr><td>  --dr DR              </td><td>     Directory Containing the gesture components</td></tr>
 <tr><td>  --task TASK          </td><td>     Choose Tasks: task0, task1, task2, task5, task6</td></tr>
